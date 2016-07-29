@@ -37,7 +37,7 @@ page.onLoadFinished = (status) ->
         ((window) ->
             'use strict'
 
-            window.__slice = [].slice
+            window.slice = [].slice
 
             namespace = (target, name, block) ->
                 [target, name, block] = [window, arguments...] if arguments.length < 3
